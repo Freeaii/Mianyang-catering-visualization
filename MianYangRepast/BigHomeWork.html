@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绵阳餐饮可视化系统</title>
+    <script src="js/echarts.js"></script>
+    <script src="js/bmap.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=VCAOxOQmntDu4rxaNS0KA6VilyKqLj22"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/ecStat.js"></script>
+    <script src="js/mianyang.js"></script>
+    <script src="js/echarts-wordcloud.js"></script>
+    <script src="js/DataProcessing.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+   <header>
+       <h1>绵阳餐饮可视化</h1>
+   </header>
+   <section class="bodybox">
+       <div class="column">
+           <div class="panel choice" >
+               <h2>类型选择</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+           <div class="panel pie">
+               <h2>饼状图-店铺类型</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+           <div class="panel reindeer">
+               <h2>用户消费行为关系图</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+       </div>
+       <div class="column">
+           <div class="panel map">
+               <h2>绵阳餐饮分布大地图</h2>
+               <div class="bigmap"></div>
+               <div class="panel-footer"></div>
+           </div>
+           <div class="panel rank">
+               <h2>店铺好评排行榜</h2>
+               <div class="rankmap"></div>
+               <div class="panel-footer"></div>
+           </div>
+       </div>
+       <div class="column">
+           <div class="panel daiding">
+               <h2>待定图表</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+           <div class="panel Scatter">
+               <h2>消费和评价关系图</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+           <div class="panel WordCloud">
+               <h2>特色词云</h2>
+               <div class="chart"></div>
+               <div class="panel-footer"></div>
+           </div>
+       </div>
+   </section>
+   <script src="js/GatherPie.js"></script>
+   <script src="js/ScatterDiagram.js"></script>
+   <script src="js/ScatterDiagram.js"></script>
+   <script src="js/map.js"></script>
+   <script src="js/BaiduMap.js"></script>
+   <script src="js/relation.js"></script>
+   <script src="js/Rank.js"></script>
+   <script src="js/WordCloud.js"></script>
+<script>
+    MainData()
+    DrawPie()
+    DrawDiagram()
+    DrawRank()
+    DrawMap()
+    relationship()
+    DrawWordCloud()
+</script>
+</body>
+
+</html>

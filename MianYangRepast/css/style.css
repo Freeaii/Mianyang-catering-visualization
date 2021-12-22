@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../images/backgroud.jpg")
+    no-repeat top center;
+    line-height: 1.15;
+}
+header {
+    position: relative;
+    height: 1.25rem;
+    background: url("../images/title.png") no-repeat;
+    background-size: 100% 100%;
+}
+h1{
+    font-size: 0.475rem;
+    color: white;
+    text-align: center;
+    line-height: 1rem;
+}
+.bodybox{
+    display: flex;
+    min-width: 12.8rem;
+    max-width: 24rem;
+    max-height: 15rem;
+    margin: 0 auto;
+    padding: 0.125rem 0.125rem 0;
+}
+.column{
+    flex: 3;
+}
+.column:nth-child(2){
+    flex: 5;
+    margin: 0 0.125rem 0.1875rem;
+ }
+.panel{
+    position: relative;
+    height: 3.875rem;
+    padding: 0 0.1875rem 0.5rem;
+    margin-bottom: 0.1875rem;
+    border: 0.01rem solid rgba(25,186,139,0.17);
+    background: rgba(255,255,255,0);
+}
+.panel:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.125rem;
+    height: 0.125rem;
+    border-top: 0.025rem solid #02a6b5;
+    border-left: 0.025rem solid #02a6b5;
+    content: "";
+}
+.panel:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.125rem;
+    height: 0.125rem;
+    border-top: 0.025rem solid #02a6b5;
+    border-right: 0.025rem solid #02a6b5;
+    content: "";
+}
+.panel-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.panel-footer:before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0.125rem;
+    height: 0.125rem;
+    border-bottom: 0.025rem solid #02a6b5;
+    border-left: 0.025rem solid #02a6b5;
+    content: "";
+}
+.panel-footer:after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0.125rem;
+    height: 0.125rem;
+    border-bottom: 0.025rem solid #02a6b5;
+    border-right: 0.025rem solid #02a6b5;
+    content: "";
+}
+h2{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.25rem;
+    font-weight: 400;
+}
+.chart{
+    height: 3rem;
+}
+.map{
+    height: 7.95rem;
+    padding: 0.1875rem;
+}
+.rank{
+    margin-top: 0.20rem;
+    height: 3.875rem;
+}
+.bigmap{
+    height: 7rem;
+}
+.rankmap{
+    height: 3.0rem;
+}
+.anchorBL{
+    display:none;
+}
